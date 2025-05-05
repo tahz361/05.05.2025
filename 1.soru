@@ -1,0 +1,18 @@
+x = int(input("Kaç yumurta var ? "))
+yumurta = int(x) // 12
+yumurtakalan = int(x) % 12
+lipaket = int(yumurtakalan) // 6
+likalan = int(yumurtakalan) % 6
+
+print("12'li paketler " + str(yumurta))
+print("6'lı paket: " + str(lipaket)) 
+print("yiyebiliceğimiz : " + str(likalan)) 
+
+
+
+
+
+
+
+
+
