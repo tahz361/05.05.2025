@@ -1,0 +1,22 @@
+fiyatlar = {
+  "Espresso": 15, 
+  "Americano": 20,
+  "Latte": 10,
+  "Cappuccino": 25,
+  "Macchiato" : 30,
+  "Mocha" : 25 ,
+  "Flat White" : 40
+}
+
+kahve = input("Ne içmek istiyorsunuz")
+boyut = input("Orta Boy mu ? XL mı ?")
+nerde = input("Elde mi ? Mekanda Mı?")
+
+fiyat = fiyatlar.get(kahve, 0)
+
+if boyut == "XL":
+  fiyat += 5
+  print("XL Boy Kahve Fiyatı : " + str(fiyat))
+else:
+  print("Orta Boy Kahve Fiyatı : " + str(fiyat))
+  
